@@ -1,0 +1,125 @@
+{
+    "questions": [
+        {
+            "question": "In which of these situations are interfaces better than abstract classes?",
+            "code": null,
+            "answers": [
+                ["When you need to define an object type's characteristics, use an interface. When you need to define an object type's capabilities, use an abstract class.", false],
+                ["Interfaces are a legacy of older versions of C#, and are interchangeable with the newer abstract class feature.", false],
+                ["When you need a list of capabilities and data that are classes-agnostic, use an interface. When you need a certain object type to share characteristics, use an abstract class.", true],
+                ["You should use both an interface and an abstract class when defining any complex object.", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "Which statement is true of delegates?",
+            "code": null,
+            "answers": [
+                ["Delegates are not supported in the current version of C#", false],
+                ["They cannot be used as callbacks.", false],
+                ["Only variables can be passed to delegates as parameters.", false],
+                ["They can be chained together.", true]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/#delegates-overview"
+        },
+        {
+            "question": "Which choice best defines C#'s asynchronous programming model?",
+            "code": null,
+            "answers": [
+                ["reactive", false],
+                ["inherited callback", false],
+                ["task-based.", true],
+                ["callback-based", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model"
+        },
+        {
+            "question": "How would you determine if a class has a particular attribute?",
+            "code": null,
+            "answers": [
+                ["var type = typeof(SomeType);\nvar attribute = type.GetCustomAttribute<SomeAttribute>();", false],
+                ["var typeof(MyPresentationModel).Should().BeDecoratedWith<SomeAttribute>();", false],
+                ["Attribute.GetCustomAttribute, typeof(SubControllerActionToViewDataAttribute)", false],
+                ["Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActionToViewDataAttribute))", true]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/api/system.attribute?view=net-5.0"
+        },
+        {
+            "question": "What is the difference between the ref and out keywords?",
+            "code": null,
+            "answers": [
+                ["Variables passed to out specify that the parameter is an output parameter, while ref specifies that a variable may be passed to a function without being initialized.", false],
+                ["Variables passed to ref can be passed to a function without being initialized, while out specifies that the value is a reference value that can be changed inside the calling method.", false],
+                ["Variables passed to out can be passed to a function without being initialized, while ref specifies that the value is a reference value that can be changed inside the calling method.", true],
+                ["Variables passed to ref specify that the parameter is an output parameter, while out specifies that a variable may be passed to a function without being initialized.", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref"
+        },
+        {
+            "question": "How could you retrieve information about a class, as well as create an instance at runtime?",
+            "code": null,
+            "answers": [
+                ["reflection", true],
+                ["serialization", false],
+                ["abstraction", false],
+                ["dependency injection", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection"
+        },
+        {
+            "question": "What is this code an example of?",
+            "code": "private static object objA;\nprivate static object objB;\n\nprivate static void performTaskA()\n{\n    lock (objB)\n    {\n        Thread.Sleep(1000);\n        lock (objA) { }\n    }\n}\n\nprivate static void PerformTaskB()\n{\n    lock (objA)\n    {\n        lock (objB) { }\n    }\n}",
+            "answers": [
+                ["a private class that uses multithreading", false],
+                ["multithread coding", false],
+                ["thread mismanagement", false],
+                ["a potential deadlock", true]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions"
+        },
+        {
+            "question": "What is the difference between an anonymous type and a regular data type?",
+            "code": null,
+            "answers": [
+                ["Anonymous types don't have type names", true],
+                ["Anonymous types can only be static", false],
+                ["Anonymous types can be used only in struts", false],
+                ["Anonymous types don't work with LINQ.", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types"
+        },
+        {
+            "question": "When would you use a Dictionary rather that an Array type in your application?",
+            "code": null,
+            "answers": [
+                ["when you need a jagged collection structure", false],
+                ["when you need to store values of the same type", false],
+                ["when you need to store key-value pairs rather than single values", true],
+                ["when you need an ordered, searchable list", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0"
+        },
+        {
+            "question": "What is the difference between a.Equals(b) and a == b?",
+            "code": null,
+            "answers": [
+                ["The .Equals method compares reference identities while the == compares contents.", false],
+                ["The .Equals method compares primitive values while == compares all values.", false],
+                ["The .Equals method compares contents while == compares references reference identity.", true],
+                ["The .Equals method compares reference type while == compares primitive value types.", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "Which choice best describes a deadlock situation?",
+            "code": null,
+            "answers": [
+                ["when you try to instantiate two objects at the same time in the same class or struct", false],
+                ["when simultaneous instructions are waiting on each other to finish before executing", true],
+                ["when you are trying to execute an action after a user event is registered", false],
+                ["when you try to execute a series of events simultaneously on multiple threads", false]
+            ],
+            "link": "https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions"
+        }
+    ]
+}

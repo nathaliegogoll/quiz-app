@@ -1,0 +1,125 @@
+{
+    "questions": [
+        {
+        "question": "If you want to import just the Component from the React library, what syntax do you use?",
+        "code": null,
+        "answers": [
+            ["import React.Component from 'react'", false],
+            ["import [ Component ] from 'react'", false],
+            ["import Component from 'react'", false],
+            ["import { Component } from 'react'", true]
+        ],
+        "link": null
+        },
+        {
+            "question": "If a function component should always render the same way given the same props, what is a simple performance optimization available for it?",
+            "code": null,
+            "answers": [
+                ["Wrap it in the React.memo higher-order component.", true],
+                ["Implement the useReducer Hook.", false],
+                ["Implement the useMemo Hook.", false],
+                ["Implement the shouldComponentUpdate lifecycle method.", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "How do you fix the syntax error that results from running this code?",
+            "code": "const person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person('Jill', 'Wilson'))",
+            "answers": [
+                ["Wrap the object in parentheses.", true],
+                ["Call the function from another file.", false],
+                ["Add a return statement before the first curly brace.", false],
+                ["Replace the object with an array.", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "If you see the following import in a file, what is being used for state management in the component?",
+            "code": "import React, {useState} from 'react';",
+            "answers": [
+                ["stateful components", false],
+                ["React Hooks", true],
+                ["math", false],
+                ["class components", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "Using object literal enhancement, you can put values back into an object. When you log person to the console, what is the output?",
+            "code": "const name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);",
+            "answers": [
+                ["{{name: 'Rachel', age: 31}}", false],
+                ["{name: 'Rachel', age: 31}", true],
+                ["{person: 'Rachel', person: 31}}", false],
+                ["{person: {name: 'Rachel', age: 31}}", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "What is the testing library most often associated with React?",
+            "code": null,
+            "answers": [
+                ["Mocha", false],
+                ["Chai", false],
+                ["Jest", true],
+                ["Sinon", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "To get the first item from the array ('cooking') using array destructuring, how do you adjust this line?",
+            "code": "const topics = ['cooking', 'art', 'history'];",
+            "answers": [
+                ["const first = ['cooking', 'art', 'history']", false],
+                ["const [] = ['cooking', 'art', 'history']", false],
+                ["const [, first]['cooking', 'art', 'history']", false],
+                ["const [first] = ['cooking', 'art', 'history']", true]
+            ],
+            "link": null
+        },
+        {
+            "question": "How do you handle passing through the component tree without having to pass props down manually at every level?",
+            "code": null,
+            "answers": [
+                ["React Send", false],
+                ["React Context", true],
+                ["React Pinpoint", false],
+                ["React Router", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "What should the console read when the following code is run?",
+            "code": "const [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);",
+            "answers": [
+                ["Horse", false],
+                ["Cat", true],
+                ["Mouse", false],
+                ["undefined", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "What is the name of the tool used to take JSX and turn it into createElement calls?",
+            "code": null,
+            "answers": [
+                ["JSX Editor", false],
+                ["ReactDOM", false],
+                ["Babel", true],
+                ["Browser Buddy", false]
+            ],
+            "link": null
+        },
+        {
+            "question": "Why might you use useReducer over useState in a React component?",
+            "code": null,
+            "answers": [
+                ["when you need to manage more complex state in an app", true],
+                ["when you want to replace Redux", false],
+                ["when you want to improve performance", false],
+                ["when you want to break your production app", false]
+            ],
+            "link": null
+        }
+    ]
+}

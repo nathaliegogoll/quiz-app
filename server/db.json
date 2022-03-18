@@ -1,0 +1,114 @@
+{
+    "questions": [{ 
+        "question": "Which operator returns true if the two compared values are not equal?",
+        "code": null,
+        "answers": [
+            ["<>", false],
+            ["~", false],
+            ["==!", false],
+            ["!==", true]
+        ],
+        "link": "https://www.w3schools.com/js/js_operators.asp"
+    }
+    ,
+    { 
+        "question": "How is a forEach statement different from a for statement?",
+        "code": null,
+        "answers": [
+            ["Only a for statement uses a callback function.", false],
+            ["A for statement is generic, but a forEach statement can be used only with an array.", true],
+            ["Only a forEach statement lets you specify your own iterator.", false],
+            ["A forEach statement is generic, but a for statement can be used only with an array.", false]
+        ],
+        "link": "https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/"
+    },
+    { 
+        "question": "Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on $50?",
+        "code": "function addTax(total) \n {return total * 1.05;}",
+        "answers": [
+            ["addTax = 50;", false],
+            ["return addTax 50", false],
+            ["addTax(50)", true],
+            ["addTax 50;", false]
+        ],
+        "link": "https://www.w3schools.com/js/js_functions.asp"
+    },
+    { 
+        "question": "Which statement is the correct way to create a variable called rate and assign it the value 100??",
+        "code": null,
+        "answers": [
+            ["let rate = 100;", true],
+            ["let 100 = rate;", false],
+            ["100 = let rate", false],
+            ["rate = 100;", false]
+        ],
+        "link": "https://www.w3schools.com/js/js_operators.asp"
+    },
+    { 
+        "question": "Which statement creates a new object using the Person constructor? Which statement creates a new Person object called 'student'",
+        "code": null,
+        "answers": [
+            ["var student = new Person();", true],
+            ["var student = construct Person;", false],
+            ["var student = Person();", false],
+            ["var student = construct Person();", false]
+        ],
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+    },
+    { 
+        "question": "When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?",
+        "code": "let modal = document.querySelector('#result'); \n setTimeout(function(){ \n modal.classList.remove('hidden); \n }, 10000); \n console.log('Results shown');",
+        "answers": [
+            ["after 10 second", false],
+            ["after results are received from the HTTP request", false],
+            ["after 10000 seconds", false],
+            ["immediately", true]
+        ],
+        "link": "https://stackoverflow.com/a/2035662/15067394"
+    },
+    { 
+        "question": "Which snippet could you add to this code to print 'food' to the console?",
+        "code": "class Animal {\nstatic belly = [];\neat() {\nAnimal.belly.push('food');\n  }\n}\nlet a = new Animal();\na.eat();\nconsole.log(/* Snippet Here */); //Prints food",
+        "answers": [
+            ["a.prototype.belly[0]", false],
+            ["Object.getPrototype0f (a).belly[0]", false],
+            ["Animal.belly[0]", true],
+            ["a.belly[0]", false]
+        ],
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static"
+    },
+    { 
+        "question": "You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?",
+        "code": "for (var i = 1; i <= 4; i++) {\n  setTimeout(function () {\n    console.log(i);\n  }, i * 10000);\n}",
+        "answers": [
+            ["for (var i = 1; i <= 4; i++) {\n  (function (i) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(j);\n}", false],
+            ["while (var i=1; i<=4; i++) {\n  setTimeout(function() {\n    console.log(i);\n    }, i*1000);\n}", false],
+            ["for (var i = 1; i <= 4; i++) {\n  (function (j) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(i);\n}", true],
+            ["for (var j = 1; j <= 4; j++) {\n  setTimeout(function () {\n    console.log(j);\n  }, j * 1000);\n}", false]
+        ],
+        "link": "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
+    },
+    { 
+        "question": "How does a function create a closure?",
+        "code": null,
+        "answers": [
+            ["It reloads the document whenever the value changes", false],
+            ["It returns a reference to a variable in its parent scope", true],
+            ["It completes execution without returning.", false],
+            ["It copies a local variable to the global scope.", false]
+        ],
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+    },
+    { 
+        "question": "Which statement creates a new function called discountPrice?",
+        "code": null,
+        "answers": [
+            ["let discountPrice = function (price) {\n  return price * 0.85;\n};", true],
+            ["let discountPrice(price) {\nreturn price * 0.85;\n};", false],
+            ["let function = discountPrice(price) {\n  return price * 0.85;\n};", false],
+            ["discountPrice = function (price) {\n  return price * 0.85;\n};", false]
+        ],
+        "link": "https://www.w3schools.com/js/js_functions.asp"
+    }
+    ]
+}
